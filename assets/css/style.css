@@ -1,0 +1,969 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* //////////////////////////////////////////////////////////////////////////
+    TYPOGRAPHY
+////////////////////////////////////////////////////////////////////////// */
+
+html {
+    text-rendering: optimizeLegibility;
+}
+
+.margin-top-small {
+    margin-top: 0.5rem !important;
+}
+
+.padding-bottom-0 {
+    padding-bottom: 0 !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.bold {
+    font-variation-settings: "wght" 580;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-wrap-balance {
+    text-wrap: balance;
+}
+
+.text-wrap-pretty {
+    text-wrap: pretty;
+}
+
+.center-text {
+    text-align: center;
+}
+
+@media screen and (min-width: 40rem) {
+    .u-show-small {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    .u-show-medium {
+        display: none;
+    }
+}
+
+.wrapper-full {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 25rem) {
+    .wrapper-full {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 30rem) {
+    .wrapper-full {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    .wrapper-full {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.wrapper-wide {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 61.25rem;
+}
+
+@media screen and (min-width: 25rem) {
+    .wrapper-wide {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 30rem) {
+    .wrapper-wide {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 40rem) {
+    .wrapper-wide {
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    .wrapper-wide {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+}
+
+.wrapper-regular {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 49.125rem;
+}
+
+@media screen and (min-width: 25rem) {
+    .wrapper-regular {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 30rem) {
+    .wrapper-regular {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 40rem) {
+    .wrapper-regular {
+        padding-left: 4.375rem;
+        padding-right: 4.375rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    .wrapper-regular {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+}
+
+.py-m {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 40rem) {
+    .py-m {
+        padding-top: 4rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    .py-m {
+        padding-top: 5.625rem;
+    }
+}
+
+@media screen and (min-width: 40rem) {
+    .py-m {
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    .py-m {
+        padding-bottom: 5.625rem;
+    }
+}
+
+.pt-m {
+    padding-top: 2.5rem;
+}
+
+@media screen and (min-width: 40rem) {
+    .pt-m {
+        padding-top: 4rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    .pt-m {
+        padding-top: 5.625rem;
+    }
+}
+
+.pb-m {
+    padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 40rem) {
+    .pb-m {
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    .pb-m {
+        padding-bottom: 5.625rem;
+    }
+}
+
+.py-s {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+
+@media screen and (min-width: 40rem) {
+    .py-s {
+        padding-top: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    .py-s {
+        padding-top: 4rem;
+    }
+}
+
+@media screen and (min-width: 40rem) {
+    .py-s {
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    .py-s {
+        padding-bottom: 4rem;
+    }
+}
+
+.pt-s {
+    padding-top: 1.75rem;
+}
+
+@media screen and (min-width: 40rem) {
+    .pt-s {
+        padding-top: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    .pt-s {
+        padding-top: 4rem;
+    }
+}
+
+.pb-s {
+    padding-bottom: 1.75rem;
+}
+
+@media screen and (min-width: 40rem) {
+    .pb-s {
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    .pb-s {
+        padding-bottom: 4rem;
+    }
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-group(root) {
+    animation-duration: 0.2s;
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+    font-family: "figtree", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@media screen and (min-width: 40rem) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    html {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-height: 1000px) and (min-width: 68.75rem) {
+    html {
+        font-size: 0.9rem;
+    }
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+body {
+    background-color: #F9F5F1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000629;
+    font-family: "figtree", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-variation-settings: "wght" 400;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    hyphens: manual;
+}
+
+@media screen and (min-width: 68.75rem) {
+    body {
+        font-size: 1.3125rem;
+        line-height: 2rem;
+    }
+}
+
+.body-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    /* This pushes the footer to the bottom */
+}
+
+header {
+    margin-top: 1.25rem;
+}
+
+@media screen and (min-width: 68.75rem) {
+    header {
+        margin-top: 2rem;
+    }
+}
+
+.header__logo {
+    width: 120px;   /* Increase as needed */
+    height: auto;   /* Maintains aspect ratio */
+}
+
+@media screen and (min-width: 68.75rem) {
+    .header__logo {
+        width: 15rem;
+    }
+}
+
+h1 {
+    font-family: "new-spirit", -apple-system, serif;
+    font-size: clamp(2.5rem, 1.25rem + 4vw, 5.625rem);
+    line-height: 0.95;
+    letter-spacing: -0.005em;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 68.75rem) {
+    h1 {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 68.75rem) {
+    .intro {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.intro p {
+    font-family: "figtree", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-variation-settings: "wght" 400;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    hyphens: manual;
+    color: #3C4059;
+    display: inline-block;
+}
+
+@media screen and (min-width: 68.75rem) {
+    .intro p {
+        letter-spacing: -0.01em;
+        font-size: 1.75rem;
+        line-height: 2.375rem;
+    }
+}
+
+@media screen and (min-width: 30rem) {
+    .intro p {
+        text-wrap: balance;
+    }
+}
+
+@media screen and (min-width: 40rem) {
+    .intro p span {
+        display: block;
+    }
+}
+
+h2 {
+    font-family: "figtree", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-variation-settings: "wght" 400;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    hyphens: manual;
+    margin-bottom: 0.75rem;
+}
+
+@media screen and (min-width: 68.75rem) {
+    h2 {
+        font-size: 1.3125rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+a {
+    text-decoration-thickness: 2px;
+    text-decoration-color: #7C78FA;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, background-image 0.2s ease-in-out, background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, outline-color 0.2s ease-in-out, transform 0.2s ease-in-out, text-underline-offset 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out;
+    color: #000629;
+}
+
+a:hover {
+    text-underline-offset: 2px;
+    text-decoration-color: #D0CFF4;
+}
+
+a:focus {
+    border-color: transparent;
+    outline: none;
+    box-shadow: 0 0 0 3px #D8E0FE;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: #FFF;
+    border-radius: 0.75rem;
+    border: 1px solid #E3DED9;
+    background: #FFF;
+    box-shadow: 0px 8px 9px 0px rgba(226, 217, 206, 0.23);
+    padding: 1.75rem;
+}
+
+@media screen and (min-width: 68.75rem) {
+    form {
+        margin-bottom: 0rem;
+        padding: 3rem 4rem 3.5rem 4rem;
+    }
+}
+
+form div {
+    display: flex;
+    width: 100%;
+    gap: 1.25rem;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 40rem) {
+    form div {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+}
+
+input,
+.button {
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    padding: 0.5625rem 1rem 0.625rem 1rem;
+}
+
+@media screen and (min-width: 68.75rem) {
+    input,
+    .button {
+        padding: 0.8125rem 1.25rem 0.875rem 1.25rem;
+    }
+}
+
+input {
+    font-family: "figtree", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-variation-settings: "wght" 400;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    hyphens: manual;
+    outline-color: transparent;
+    outline-width: 0px;
+    border-radius: 0.375rem;
+    background: #F9F8F7;
+    width: 100%;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, background-image 0.2s ease-in-out, background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, outline-color 0.2s ease-in-out, transform 0.2s ease-in-out, text-underline-offset 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 68.75rem) {
+    input {
+        font-size: 1.3125rem;
+        line-height: 2rem;
+    }
+}
+
+input::placeholder {
+    color: #55576D;
+}
+
+input:focus {
+    background-color: #FFF;
+    border-color: #504DE8;
+    outline-color: #504DE8;
+    box-shadow: 0 0 0 3px #D8E0FE;
+}
+
+.button {
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, background-image 0.2s ease-in-out, background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, outline-color 0.2s ease-in-out, transform 0.2s ease-in-out, text-underline-offset 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out;
+    position: relative;
+    display: inline-block;
+    border-radius: 0.375rem;
+    border: 1px solid #504DE8;
+    color: #FFF;
+    letter-spacing: 0;
+    text-decoration: none;
+    margin-left: 0;
+    background-color: #504DE8;
+    font-family: "figtree", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-variation-settings: "wght" 400;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    hyphens: manual;
+    display: inline-block;
+    cursor: pointer;
+    font-variation-settings: "wght" 500;
+}
+
+@media screen and (min-width: 68.75rem) {
+    .button {
+        font-size: 1.3125rem;
+        line-height: 2rem;
+    }
+}
+
+.button:hover {
+    border-color: #3C36CC;
+    background-color: #3C36CC;
+    color: #FFF;
+}
+
+.button:active {
+    border-color: #2D2D82;
+    background-color: #2D2D82;
+    top: 1px;
+}
+
+.button:focus {
+    color: #FFF;
+    border-color: #504DE8;
+    outline-color: #504DE8;
+    box-shadow: 0 0 0 3px #D8E0FE;
+}
+
+.illustration,
+.footer__content {
+    margin: 0 auto;
+    margin-top: -0.625rem;
+    padding: 0;
+    max-width: 64.75rem;
+    padding: 0 0.375rem;
+}
+
+@media screen and (min-width: 40rem) {
+    .illustration,
+    .footer__content {
+        padding: 0 2.5rem;
+    }
+}
+
+.illustration img {
+    width: 100%;
+}
+
+footer {
+    color: #FFF;
+    background-color: #3617A7;
+    margin-top: 2.75rem;
+}
+
+@media screen and (min-width: 68.75rem) {
+    footer {
+        margin-top: 6.25rem;
+    }
+}
+
+.footer__curve {
+    width: 100%;
+    /* or a fixed width like 700px */
+    aspect-ratio: 1400/108;
+    background-image: url("/assets/images/curve.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: -1px;
+}
+
+.footer__content {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 68.75rem) {
+    .footer__content {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 68.75rem) {
+    footer p {
+        display: inline-block;
+    }
+}
+
+footer a {
+    color: #FFF;
+}
+
+@media screen and (min-width: 68.75rem) {
+    .btg {
+        position: relative;
+        padding-left: 2.75rem;
+    }
+}
+
+.btg__logo {
+    background-image: url("/assets/images/thumbs.png");
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    text-indent: -99999em;
+}
+
+@media screen and (min-width: 68.75rem) {
+    .btg__logo {
+        display: inline-block;
+        width: 2.25rem;
+        height: 2.25rem;
+        position: absolute;
+        left: 0;
+        top: -0.25rem;
+    }
+}
+
+.footer__left {
+    text-align: center;
+}
+
+@media screen and (min-width: 68.75rem) {
+    .footer__left {
+        margin-top: 12px;
+        text-align: left;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 68.75rem) {
+    .social-links {
+        justify-content: right;
+        margin-top: 0;
+    }
+}
+
+.social-link a {
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: -99999em;
+    width: 3rem;
+    height: 3rem;
+    background-size: 2.125rem;
+    border-radius: 62499.9375rem;
+}
+
+.social-link a:hover {
+    background-color: #514CE8;
+}
+
+.social-link--mastodon a {
+    background-image: url("/assets/images/social/mastodon.svg");
+}
+
+.social-link--x a {
+    background-image: url("/assets/images/social/x.svg");
+}
+
+.social-link--bluesky a {
+    background-image: url("/assets/images/social/bluesky.svg");
+}
+
+.social-link--instagram a {
+    background-image: url("/assets/images/social/instagram.svg");
+}
+
+.thanks-text {
+    max-width: 20rem;
+}
+
+.typewriter {
+    border-right: 2px solid #3C4059;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink-cursor 0.8s steps(1) infinite;
+}
+
+@keyframes blink-cursor {
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #3C4059;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.switch {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 2px;
+  top: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+input:checked + .slider::before {
+  transform: translateX(30px);
+}
+.mode-label {
+  margin-left: 15px;
+  font-weight: bold;
+}
+.content {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
